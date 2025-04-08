@@ -10,7 +10,7 @@
   }
 
   function decrementar(contador) {
-    if (contador > 0) {
+    if (eval(contador).value > 0) {
       eval(contador).value--
     }
   }
@@ -35,14 +35,14 @@
       <h2>Contador 1</h2>
       <button @click="incrementar('contador1')">Incrementar</button>
       <button @click="decrementar('contador1')">Decrementar</button>
-      <p>Valor: </p>
+      <p>Valor: {{ contador1 }}</p>
     </div>
 
     <div class="contador">
       <h2>Contador 2</h2>
       <button @click="incrementar('contador2')">Incrementar</button>
       <button @click="decrementar('contador2')">Decrementar</button>
-      <p>Valor: </p>
+      <p>Valor: {{ contador2 }}</p>
     </div>
 
     <div class="soma">
