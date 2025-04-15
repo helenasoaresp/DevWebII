@@ -18,13 +18,13 @@ const cidades = ref([
 const cidadesOrdenadas = computed(() => [...cidades.value].sort())
 
 function adicionarCidade() {
-  cidades.value.push(cidade.value)
-  cidade.value = ''
-}
+    cidades.value.push(cidade.value);
+    cidade.value = '';
+  }
 
-function removerCidade(index) {
-  cidades.value.slice(index, 1);
-}
+  function removerCidade(index) {
+    cidades.value.splice(index, 1);
+  }
 
 </script>
 
@@ -62,7 +62,7 @@ function removerCidade(index) {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #4c00ff;
     color: #fff;
     cursor: pointer;
   }
@@ -76,7 +76,7 @@ function removerCidade(index) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
   }
 
   .form {
